@@ -1,5 +1,5 @@
 navigator.geolocation.getCurrentPosition(function(position) {
-  // 내 위치 정보는 position.coords에 있어요
+  // 내 위치 정보는 position.coords에!
   const latitude = position.coords.latitude;
   const longitude = position.coords.longitude;
   console.log("위도:", latitude, "경도:", longitude);
