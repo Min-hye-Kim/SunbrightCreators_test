@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 지도 API 예제</title>
+    <!-- 네이버 지도 API 로드 -->
+<script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=43rubmf8nz">
+    </script>
+</head>
+<body>
+    <h1>네이버 지도 API 예제</h1>
+    
+    <!-- 지도 div -->
+    <div id="map" style="width:100%; height:500px; border:1px solid #ccc;"></div>
+    
+    <!-- 좌표정보 표시욘 div -->
+    <div id="coordinate-info" style="margin-top: 10px; padding: 10px; background-color: #f5f5f5;">
+        <p><strong>클릭한 좌표:</strong> <span id="coordinates">지도를 클릭해주세요</span></p>
+    </div>
+    
+    <script src="map.js"></script>
+</body>
+</html>
