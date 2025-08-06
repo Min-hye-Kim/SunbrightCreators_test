@@ -4,12 +4,11 @@ let currentMarker = null;
 
 // 지도 초기화 함수
 function initMap() {
-    // 서울시청 좌표 (걍 예시..)
-    const seoulCityHall = new naver.maps.LatLng(37.5666805, 126.9784147);
+    const Ewha = new naver.maps.LatLng(37.561102, 126.946637);
     
     // 지도 옵션 설정
     const mapOptions = {    
-        center: seoulCityHall,  // 지도 중심 좌표
+        center: Ewha,  // 지도 중심 좌표
         zoom: 15,               // 줌 레벨 (1~21)
         mapTypeControl: true,   // 지도 타입 컨트롤 표시
         zoomControl: true,      // 줌 컨트롤 표시
@@ -22,11 +21,11 @@ function initMap() {
 // 지도 생성
     map = new naver.maps.Map('map', mapOptions);
     
-    // 기본 마커 생성 (서울 시청)
+    // 기본 마커 생성
     const defaultMarker = new naver.maps.Marker({
-        position: seoulCityHall,
+        position: Ewha,
         map: map,
-        title: '서울특별시청'
+        title: '이화여자대학교'
     });
     
     // 지도 클릭 이벤트 리스너 등록
