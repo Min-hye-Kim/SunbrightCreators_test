@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#map {
+    width: 100%;
+    height: 100vh;
+}
+
+/* 클러스터 마커 스타일 */
+.cluster-marker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.cluster-marker:hover {
+    transform: scale(1.1);
+}
+
+.cluster-marker-1 {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.cluster-marker-2 {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.cluster-marker-3 {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+/* 개별 마커 스타일 */
+.business-marker {
+    width: 24px;
+    height: 24px;
+    background: #ff4757;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.business-marker::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid #ff4757;
+}
+
+/* 정보창 스타일 */
+.info-window {
+    padding: 10px;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.info-window h4 {
+    margin: 0 0 8px 0;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+.info-window p {
+    margin: 4px 0;
+    color: #7f8c8d;
+    font-size: 12px;
+}
+
+.info-window .business-type {
+    background: #3498db;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-size: 10px;
+    display: inline-block;
+    margin-top: 4px;
+}

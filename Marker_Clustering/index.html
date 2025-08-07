@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사업자 등록 주소 마커 클러스터링</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="map"></div>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- 여기 키 인증부분이 ncpKeyId인지 ClientKey인지..2025년 7웡에 바뀌어서 헷갈리는데 확인필요 -->
+    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=43rubmf8nz">
+    </script>
+
+    <!-- 마커 클러스터링 스크립트 -->
+    <script src="js/MarkerClustering.js"></script>
+    
+    <!-- 메인 애플리케이션 스크립트 -->
+    <script src="js/app.js"></script>
+</body>
+</html>
