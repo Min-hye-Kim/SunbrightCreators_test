@@ -50,10 +50,10 @@ async function loadBusinessData() {
 
 async function fetchBusinessDataFromAPI() {
     const serviceKey = 'YOUR_SERVICE_KEY';
-    const apiUrl = `https://api.odcloud.kr/api/nts-businessman/v1/validate?serviceKey=${serviceKey}`;
+    const apiUrl = `https://api.odcloud.kr/api/nts-businessman/v1/validate?serviceKey=zKUgynQeTrBOerMb%2F08tKevQO8nC%2B182XrNejMou0ZrvOm4pRYBK%2BCt1Qaw7kPjTMjH79H9%2Bb2WhOijQneaP7Q%3D%3D`;
     
-    // 실제 구현에서는 사업자등록번호 목록 가지고 주소정보 조회하면 돼요
-    const businessNumbers = ['0000000000', '0000000000']; // 예시에요!
+    // 실제 구현에서는 사업자등록번호 목록 가지고 주소정보 조회하면 e됨.
+    const businessNumbers = ['0000000000', '0000000000']; // 걍 예시!
     
     const businessLocations = [];
     
